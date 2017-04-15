@@ -1,5 +1,15 @@
 ## [Nextcloud](https://nextcloud.com) Rock-On definitions for [Rockstor](https://rockstor.com)
 
+## About
+
+This custom Rock-On simplyfies installation of Nextcloud software on to the Rockstor server.
+
+It consists of two separate Docker images:
+
+Custom Nextcloud Docker using php-fpm and Nginx reverse proxy with SSL and Let's Encrypt support.
+
+MariaDB database backend for storing the metadata. A default database, user and password is created at the installation time and the same info is used for configuring the Nextcloud container.
+
 ## Installation
 
 Install [Rockstor](http://rockstor.com/download.html), create an user account and storage pool etc.
