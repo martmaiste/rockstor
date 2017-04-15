@@ -2,7 +2,7 @@
 
 ## Installation
 
-Install [Rockstor](http://rockstor.com/download.html)
+Install [Rockstor](http://rockstor.com/download.html), create an user account and storage pool etc.
 
 Change the Rockstor GUI port from 443 to 1443 to free the default SSL port for Nextcloud.
 
