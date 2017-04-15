@@ -18,7 +18,7 @@ Log in to your Rockstor server shell and create the directory for custom Rock-On
 mkdir /opt/rockstor/rockons-metastore
 ```
 
-Then download the Nextcloud definition:
+Download the Nextcloud definition:
 ```
 curl https://raw.githubusercontent.com/martmaiste/rockstor/master/nextcloud/nextcloud.json -o /opt/rockstor/rockons-metastore/nextcloud.json
 ```
