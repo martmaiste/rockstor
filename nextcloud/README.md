@@ -1,4 +1,4 @@
-## [Nextcloud](https://nextcloud.com) Rock-Ons definitions for [Rockstor](https://rockstor.com)
+## [Nextcloud](https://nextcloud.com) Rock-On definitions for [Rockstor](https://rockstor.com)
 
 ## Installation
 
@@ -8,7 +8,7 @@ Change the Rockstor GUI port from 443 to 1443 to free the default SSL port for N
 
 On the Rockstor GUI go to System -> Services, click the wrench icon next to Rockstor service and enter the new port (1443 for example).
 
-Create shares for nextcloud: nextcloud-config, nextcloud-db, nextcloud-apps, nextcloud-data also a share for rock-ons.
+Create shares for Nextcloud: nextcloud-config, nextcloud-db, nextcloud-apps, nextcloud-data also a share for rock-ons.
 
 On the Rockstor GUI go to Rock-Ons menu and activate the Rock-Ons service.
 Select the rock-ons share where the docker images will be kept.
