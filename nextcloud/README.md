@@ -1,8 +1,8 @@
-## [Nextcloud](https://nextcloud.com) Rock-Ons definitions for Rockstor
+## [Nextcloud](https://nextcloud.com) Rock-Ons definitions for [Rockstor](https://rockstor.com)
 
 ## Installation
 
-Install [Nextcloud](https://nextcloud.com/)
+Install [Rockstor](http://rockstor.com/download.html)
 
 Change the Rockstor GUI port from 443 to 1443 to free the default SSL port for Nextcloud.
 On the Rockstor GUI go to System -> Services, click the wrench icon next to Rockstor service and enter the new port (1443 for example).
