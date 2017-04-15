@@ -2,6 +2,8 @@
 
 ## Installation
 
+Create a share for minidlna config and for media files if it does not exist yet.
+
 Log in to your Rockstor server shell and create the directory for custom Rock-Ons.
 ```
 mkdir /opt/rockstor/rockons-metastore
@@ -9,12 +11,14 @@ mkdir /opt/rockstor/rockons-metastore
 
 Download the MiniDLNA definition:
 ```
-curl https://raw.githubusercontent.com/martmaiste/rockstor/master/nextcloud/minidlna.json -o /opt/rockstor/rockons-metastore/minidlna.json
+curl https://raw.githubusercontent.com/martmaiste/rockstor/master/minidlna/minidlna.json -o /opt/rockstor/rockons-metastore/minidlna.json
 ```
 
 Go to Rock-Ons menu and click the Update button. Find the Nextcloud Rock-On and click Install.
 
-Select the share where the media files are located.
+Select the config and media share.
+
+Enter the UID and GID (1000 and 1000 for default user).
 
 Optionally you may want to open two shell windows and observe the installation process.
 In one shell window type:
