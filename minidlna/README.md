@@ -14,7 +14,7 @@ Download the MiniDLNA definition:
 curl https://raw.githubusercontent.com/martmaiste/rockstor/master/minidlna/minidlna.json -o /opt/rockstor/rockons-metastore/minidlna.json
 ```
 
-Go to Rock-Ons menu and click the Update button. Find the Nextcloud Rock-On and click Install.
+Go to Rock-Ons menu and click the Update button. Find the MiniDLNA Rock-On and click Install.
 
 Select the config and media share.
 
