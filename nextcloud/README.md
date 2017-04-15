@@ -10,6 +10,9 @@ On the Rockstor GUI go to System -> Services, click the wrench icon next to Rock
 
 Create shares for nextcloud: nextcloud-config, nextcloud-db, nextcloud-apps, nextcloud-data also a share for rock-ons.
 
+On the Rockstor GUI go to Rock-Ons menu and activate the Rock-Ons service.
+Select the rock-ons share where the docker images will be kept.
+
 Log in to your Rockstor server shell and create the directory for custom Rock-Ons.
 
 Then download the Nextcloud definition:
@@ -17,8 +20,6 @@ Then download the Nextcloud definition:
 mkdir /opt/rockstor/rockons-metastore
 curl https://raw.githubusercontent.com/martmaiste/rockstor/master/nextcloud/nextcloud.json -o /opt/rockstor/rockons-metastore/nextcloud.json
 ```
-
-On the Rockstor GUI go to Rock-Ons menu and activate the Rock-Ons service. Select the rock-ons share where the docker images will be kept.
 
 Go to Rock-Ons menu and click the Update button. Find the Nextcloud Rock-On and click Install.
 
