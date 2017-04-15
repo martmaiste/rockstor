@@ -14,10 +14,12 @@ On the Rockstor GUI go to Rock-Ons menu and activate the Rock-Ons service.
 Select the rock-ons share where the docker images will be kept.
 
 Log in to your Rockstor server shell and create the directory for custom Rock-Ons.
+```
+mkdir /opt/rockstor/rockons-metastore
+```
 
 Then download the Nextcloud definition:
 ```
-mkdir /opt/rockstor/rockons-metastore
 curl https://raw.githubusercontent.com/martmaiste/rockstor/master/nextcloud/nextcloud.json -o /opt/rockstor/rockons-metastore/nextcloud.json
 ```
 
