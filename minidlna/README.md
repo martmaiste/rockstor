@@ -18,8 +18,6 @@ Go to Rock-Ons menu and click the Update button. Find the MiniDLNA Rock-On and c
 
 Select the config and media share.
 
-Enter the UID and GID (1000 and 1000 for default user).
-
 Optionally you may want to open two shell windows and observe the installation process.
 In one shell window type:
 ```
