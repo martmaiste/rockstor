@@ -2,7 +2,7 @@
   "minidlna": {
     "containers": {
       "minidlna": {
-        "image": "binhex/arch-minidlna",
+        "image": "martmaiste/minidlna",
         "launch_order": 1,
         "opts": [
           [
@@ -19,36 +19,21 @@
           }
         },
         "volumes": {
-          "/config": {
-            "description": "Choose a Share for minidlna configuration. Eg: create a Share called minidlna-config for this purpose alone.",
-            "label": "Config Storage"
-          },
           "/media": {
             "description": "Choose a Share for minidlna content(your media). Eg: create a Share called minidlna-data for this purpose alone. You can also assign other media Shares on the system after installation.",
-            "label": "Data Storage"
+            "label": "Media Storage"
           }
         },
-        "environment": {
-          "PUID": {
-            "description": "Enter a valid UID to run minidlna with. It must have full permissions to all Shares mapped in the previous step.",
-            "label": "UID",
-            "index": 1
-          },
-          "PGID": {
-            "description": "Enter a valid GID to use along with the above UID. It(or the above UID) must have full permissions to all Shares mapped in the previous step.",
-            "label": "GID",
-            "index": 2
-          }
-        }
+        "environment": {}
       }
     },
-    "description": "ReadyMedia (formerly known as MiniDLNA) is a simple media server software, with the aim of being fully compliant with DLNA/UPnP-AV clients. It is developed by a NETGEAR employee for the ReadyNAS product line.",
+    "description": "MiniDLNA simple media server.",
     "more_info": "<h4>Adding more media to minidlna.</h4><p>You can add more Shares(with media) to minidlna from the settings wizard of this Rock-on. </p>",
     "ui": {
       "slug": ""
     },
     "volume_add_support": true,
-    "website": "https://hub.docker.com/r/binhex/arch-minidlna/",
+    "website": "https://hub.docker.com/r/martmaiste/minidlna/",
     "version": "1.0"
   }
 }
