@@ -35,7 +35,7 @@ curl https://raw.githubusercontent.com/martmaiste/rockstor/master/nextcloud/next
 
 Go to Rock-Ons menu and click the Update button. Find the Nextcloud Rock-On and click Install.
 
-Select the correct shares and make sure that SSL port is 443.
+Select the correct shares and make sure that HTTP port is 80 and HTTPS port is 443. Otherwise the Let's Encrypt challange will not pass.
 
 Optionally you may want to open two shell windows and observe the installation process.
 In one shell window type:
