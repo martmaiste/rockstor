@@ -63,7 +63,7 @@
                 "environment": {}
             },
             "nextcloud-db": {
-                "image": "mariadb",
+                "image": "mariadb:10",
 		"tag": "10",
                 "launch_order": 1,
                 "volumes": {
