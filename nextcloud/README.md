@@ -1,6 +1,6 @@
 ## [Nextcloud](https://nextcloud.com) Rock-On definitions for [Rockstor](https://rockstor.com)
 
-## About
+### About
 
 This custom Rock-On simplyfies installation of Nextcloud software on to the Rockstor server.
 
@@ -10,7 +10,7 @@ Custom Nextcloud Docker using php-fpm and Nginx reverse proxy with SSL and Let's
 
 MariaDB database backend for storing the metadata. A default database, user and password is created at the installation time and the same info is used for automatically configuring the Nextcloud container.
 
-## Installation
+### Installation
 
 Install [Rockstor](http://rockstor.com/download.html), create an user account and storage pool etc.
 
@@ -48,3 +48,17 @@ journalctl -f
 ```
 
 The installation may take few minutes, be patient.
+
+### Installing free Lets'Encrypt SSL certificate
+On the server shell run
+```
+docker exec -ti nextcloud bash
+```
+Now you are in the nextcloud docker container root shell. DOMAIN is your public server name and EMAIL your e-mail address. Let's Encrypt system will send e-mail notices when certificate expires.
+```
+DOMAIN=your.domain.com EMAIL=your@domain.com letsencrypt-setup
+```
+Manual certificate renewal
+```
+docker exec -ti nextcloud letsencrypt-renew
+```
