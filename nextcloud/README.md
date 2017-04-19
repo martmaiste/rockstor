@@ -49,7 +49,7 @@ journalctl -f
 
 The installation may take few minutes, be patient.
 
-### Using Lets'Encrypt certificate
+### Let's Encrypt certificate setup
 On the server shell enter the nextcloud docker container shell:
 ```
 docker exec -ti nextcloud bash
