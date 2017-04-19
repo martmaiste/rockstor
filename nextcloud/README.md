@@ -49,12 +49,13 @@ journalctl -f
 
 The installation may take few minutes, be patient.
 
-### Installing free Lets'Encrypt SSL certificate
-On the server shell run
+### Using Lets'Encrypt certificate
+On the server shell enter the nextcloud docker container shell:
 ```
 docker exec -ti nextcloud bash
 ```
-Now you are in the nextcloud docker container root shell. DOMAIN is your public server name and EMAIL your e-mail address. Let's Encrypt system will send e-mail notices when certificate expires.
+DOMAIN is your public server name and EMAIL your e-mail address.
+Let's Encrypt system will send e-mail notices when certificate expires.
 ```
 DOMAIN=your.domain.com EMAIL=your@domain.com letsencrypt-setup
 ```
