@@ -6,9 +6,9 @@ This custom Rock-On simplyfies installation of Nextcloud software on to the Rock
 
 It consists of two separate Docker images:
 
-Custom Nextcloud Docker using php-fpm and Nginx reverse proxy with SSL and Let's Encrypt support.
+Custom [Nextcloud Docker](https://hub.docker.com/r/martmaiste/nextcloud/) using php-fpm and Nginx reverse proxy with SSL and Let's Encrypt support.
 
-MariaDB database backend for storing the metadata. A default database, user and password is created at the installation time and the same info is used for automatically configuring the Nextcloud container.
+[MariaDB](https://hub.docker.com/_/mariadb/) database backend for storing the metadata. A default database, user and password is created at the installation time and the same info is used for automatically configuring the Nextcloud container.
 
 ### Installation
 
