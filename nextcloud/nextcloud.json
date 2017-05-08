@@ -26,7 +26,8 @@
                         "host_default": 443,
                         "label": "WebUI SSL port",
                         "protocol": "tcp",
-                        "ui": true
+                        "ui": true,
+			"https": true
                     }
                 },
                 "volumes": {
