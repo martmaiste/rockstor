@@ -30,6 +30,7 @@
     "description": "MiniDLNA simple media server.",
     "more_info": "<h4>Adding more media to minidlna.</h4><p>You can add more Shares(with media) to minidlna from the settings wizard of this Rock-on. </p>",
     "ui": {
+      "https": true,
       "slug": ""
     },
     "volume_add_support": true,
